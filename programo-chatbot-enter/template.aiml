@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 11/23/2011 -->
+<!-- -->
+
+   <category>
+      <pattern>started chatting</pattern>
+      <template>
+            &lt;li&gt;
+                &lt;div class='bot-story'&gt;
+                    &lt;img class='emoji' src='./svg/smiling.svg'/&gt;Hi! I'm a Bot - the ChatBot team has programmed me to handle the most frequent questions. Repetition - this is what I am good at!                &lt;/div&gt;
+                &lt;div class='button-group'&gt;
+
+                &lt;/div&gt;
+            &lt;/li&gt;
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>my topics</pattern>
+      <template>
+            &lt;li&gt;
+                &lt;div class='bot-story'&gt;
+                    &lt;img class='emoji' src='./svg/smiling.svg'/&gt;
+                   Select the topic or write your question below.
+                &lt;/div&gt;
+                &lt;div class='bot-button-group'&gt;
+                    &lt;a href='https://google.com'&gt;
+                        &lt;img  src='./svg/light-bulb.svg'&gt;
+                        &lt;span&gt;Getting started&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    &lt;a&gt;
+                        &lt;img src='./svg/rocket.svg'/&gt;
+                        &lt;span&gt;Features&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    &lt;a href='https://google.com'&gt;
+                        &lt;img src='./svg/thunder.svg'/&gt;
+                        &lt;span&gt;Try for fee&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    &lt;a href='https://google.com'&gt;
+                        &lt;img src='./svg/dollar.svg'/&gt;
+                        &lt;span&gt;Pricing&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    &lt;a href='https://google.com'&gt;
+                        &lt;img src='./svg/call-answer.svg'/&gt;
+                        &lt;span&gt;Schedule a call&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    &lt;a href='https://google.com'&gt;
+                        &lt;img src='./svg/mail.svg'/&gt;
+                        &lt;span&gt;Contact us&lt;/span&gt;
+                    &lt;/a href='https://google.com'&gt;
+                    
+                &lt;/div&gt;
+            &lt;/li&gt;
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>Hi</pattern>
+      <template>
+		Hi, there
+      </template>  
+   </category>
+   <category>
+      <pattern>i am *</pattern>
+      <template>
+		Nice to meet you,<star/>!
+		<think><set name="username"><star /></set></think>
+		</template>  
+   </category>
+   
+   <category>
+      <pattern>Good Night</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>  
+   </category>  
+   
+</aiml>
